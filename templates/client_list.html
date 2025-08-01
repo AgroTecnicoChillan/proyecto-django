@@ -15,8 +15,12 @@
     </style>
 </head>
 <body>
-    <h1>Clientes del Almacén (desde Supabase)</h1>
-
+    <div class="content-container">
+      <h1>Clientes del Almacén (desde Supabase)</h1>
+         <a href="{% url 'index' %}">
+           <button>Volver a la Página de Inicio</button>
+         </a>
+    </div>
     {% if error_message %}
         <p class="error">{{ error_message }}</p>
     {% endif %}
@@ -52,7 +56,6 @@
         {% endif %}
     {% endif %}
 
-    <p>
-        </p>
+   
 </body>
 </html>

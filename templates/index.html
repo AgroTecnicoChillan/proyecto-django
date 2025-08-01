@@ -9,7 +9,9 @@
     <h1>Bienvenido a Mi Almacén</h1>
     <img src="{% static 'images/almacen.jpg' %}" alt="Imagen de Almacén" style="width:300px;height:200px;">
     <p>Esta es la página de inicio de tu aplicación Django.</p>
-
+    <a href="{% url 'client_list' %}">
+           <button>Ver Lista de Clientes</button>
+    </a>
 </body>
 </html>
 
