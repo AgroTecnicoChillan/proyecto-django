@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de Clientes (Modelo Django)</title>
+</head>
+<body>
+    <h1>Listado de Clientes (Modelo Django)</h1>
+    {% if clientes %}
+        <ul>
+        {% for cliente in clientes %}
+            <li>{{ cliente.nombre }} {{ cliente.apellido }} - {{ cliente.email }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No hay clientes registrados en la base de datos de Django.</p>
+    {% endif %}
+</body>
+</html>
